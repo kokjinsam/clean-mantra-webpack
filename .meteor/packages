@@ -19,4 +19,3 @@ webpack:css@1.1.0
 webpack:react
 
 kadira:flow-router-ssr
-simple:dev-error-overlay
