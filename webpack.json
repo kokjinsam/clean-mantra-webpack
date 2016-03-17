@@ -1,0 +1,19 @@
+{
+  "root": "src",
+  "devServer": {
+    "host": "localhost"
+  },
+  "hotMiddleware": {
+    "reload": true
+  },
+  "css": {
+    "module": true
+  },
+  "postcss": [
+    "postcss-import",
+    "postcss-simple-vars",
+    "postcss-modules-values",
+    "postcss-nested",
+    ["autoprefixer", { "browser": "last 2 versions" }]
+  ]
+}
