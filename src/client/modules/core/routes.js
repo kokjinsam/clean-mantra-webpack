@@ -1,5 +1,5 @@
 import React from 'react';
-import {mount} from 'react-mounter';
+import { mount } from 'react-mounter';
 
 import MainLayout from './components/layout.main';
 import Hello from './components/hello';
@@ -11,8 +11,8 @@ export default function (injectDeps, { FlowRouter }) {
     name: 'hello',
     action() {
       mount(MainLayoutCtx, {
-        content: () => (<Hello />)
+        content: () => (<Hello />),
       });
-    }
+    },
   });
 }

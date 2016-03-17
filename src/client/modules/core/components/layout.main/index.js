@@ -5,7 +5,7 @@ import style from './style.import.css';
 const MainLayout = ({ content = () => null }) => (
   <div>
     <header className={style.hey}>
-    <h1>Easy Make</h1>
+    <h1>No SSR</h1>
     </header>
 
     <div>

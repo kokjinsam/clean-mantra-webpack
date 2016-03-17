@@ -13,9 +13,9 @@
   ],
 
   "globals": {
-      "If": true,
-      "Else": true,
-      "For": true
+    "If": true,
+    "Else": true,
+    "For": true
   },
 
   "ecmaFeatures": {
