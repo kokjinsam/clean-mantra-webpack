@@ -4,17 +4,19 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-base             # Packages every Meteor app needs to have
-mobile-experience       # Packages for a great mobile UX
-mongo                   # The database Meteor supports right now
-tracker                 # Meteor's client-side reactive programming library
+meteor-base
+mobile-experience
+mongo
+tracker
+es5-shim
 
-es5-shim                # ECMAScript 5 compatibility for older browsers.
-
-webpack:webpack
-webpack:react
 standard-minifier-css
 standard-minifier-js
-kadira:flow-router
+
+webpack:webpack
 webpack:postcss
 webpack:css@1.1.0
+webpack:react
+
+kadira:flow-router-ssr
+simple:dev-error-overlay
