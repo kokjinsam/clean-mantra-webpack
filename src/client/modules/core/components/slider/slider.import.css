@@ -1,0 +1,17 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  visibility: hidden;
+  overflow: hidden;
+
+  div {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+$appbar-height-base: 5.6rem;
+$appbar-height-increment: 0.8rem;
+$appbar-height-small: $appbar-height-base - $appbar-height-increment;
+$appbar-height-large: $appbar-height-base + $appbar-height-increment;
+
+$appbar-baby-bear: 480px;
+$appbar-sis-bear: 600px;
+$appbar-mama-bear: 860px;
+$appbar-bro-bear: 1024px;
+$appbar-papa-bear: 1070px;
+
+$color-white: #ffffff;
+$spacing: 0.8rem;
+
+.wrapper {
+  position: fixed;
+  z-index: 200;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  height: $appbar-height-base;
+  background-color: $color-white;
+
+  @media screen and (min-width: $appbar-baby-bear) {
+    height: $appbar-height-small;
+  }
+
+  @media screen and (min-width: $appbar-sis-bear) {
+    height: $appbar-height-large;
+  }
+}
