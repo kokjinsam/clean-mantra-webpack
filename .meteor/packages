@@ -19,3 +19,4 @@ webpack:css@1.1.0
 webpack:react
 
 kadira:flow-router-ssr
+kadira:dochead

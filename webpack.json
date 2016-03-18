@@ -14,7 +14,7 @@
     "postcss-simple-vars",
     "postcss-modules-values",
     "postcss-nested",
-    "stylelint",
+    "postcss-calc",
     ["autoprefixer", { "browser": "last 2 versions" }]
   ]
 }

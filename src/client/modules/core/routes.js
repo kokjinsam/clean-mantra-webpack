@@ -1,17 +1,48 @@
 import React from 'react';
 import { mount } from 'react-mounter';
 
-import MainLayout from './components/layout.main';
-import Hello from './components/hello';
+import {
+  addDefaultTitle,
+  addDefaultMetas,
+  addDefaultLinks,
+  setTitle,
+} from './libs/dochead';
+
+import TrioLayout from './components/layout.trio';
+import Appbar from './components/appbar';
+import Greetings from './components/greetings';
+import SliderExample from './components/slider-example';
+import Footer from './components/footer';
 
 export default function (injectDeps, { FlowRouter }) {
-  const MainLayoutCtx = injectDeps(MainLayout);
+  const TrioLayoutCtx = injectDeps(TrioLayout);
 
   FlowRouter.route('/', {
     name: 'hello',
     action() {
-      mount(MainLayoutCtx, {
-        content: () => (<Hello />),
+      addDefaultTitle();
+      addDefaultMetas();
+      addDefaultLinks();
+
+      mount(TrioLayoutCtx, {
+        header: () => (<Appbar />),
+        content: () => (<Greetings />),
+        footer: () => (<Footer />),
+      });
+    },
+  });
+
+  FlowRouter.route('/slider', {
+    name: 'slider',
+    action() {
+      setTitle('Slider Example');
+      addDefaultMetas();
+      addDefaultLinks();
+
+      mount(TrioLayoutCtx, {
+        header: () => (<Appbar />),
+        content: () => (<SliderExample />),
+        footer: () => (<Footer />),
       });
     },
   });

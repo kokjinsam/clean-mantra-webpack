@@ -33,6 +33,7 @@ Downloads these packages:
 App style configurations can be found in `/client/configs/styles`.
 
 Files:
+
 1. base.import.css - override normalize.css
 2. fonts.import.css - Roboto, material-icons
 3. typography.import.css - Material Design font sizes
@@ -44,32 +45,6 @@ Roboto as default.
 Issues:
 - Unable to import fonts in fonts.import.css
 
-#### What you can do
-
-```
-// colors.import.css
-// export values to other CSS files.
-@value primary: #BF4040;
-@value secondary: #1F4F7F;
-
-// style.import.css
-// import values from colors.import.css
-@value colors: './colors.import.css';
-@value primary, secondary from colors;
-
-// sass-like variable
-$color: primary;
-
-// sass-like nested structure
-.box {
-  background-color: $color;
-
-  p {
-    font-size: 30rem;
-  }
-}
-```
-
 ### Redux
 
 Redux is used to maintain state for components and actions.
@@ -78,19 +53,27 @@ A component should only use Redux to store state if and only if the component st
 
 ### DocHead
 
-Dochead is not working at the moment due to Meteor 1.3-rc.2.
+Currently using a hot-fix `kadira:dochead`.
+
+Future:
+- Change to use official package
 
 ### Linting
 
-ESLint is using `eslint-config-airbnb`
-StyleLint is using normalize.css .stylintrc
+ESLint is using `eslint-config-airbnb`.
+StyleLint is using a customized `.stylintrc`.
 
 Issues:
-- ESLint gives error on spread operator, see `/client/main.js#L11`
+- StyleLint spits out lots of error, tried `ignoreFiles`, `stylint-disable` comment.
 
-Future:
-- use `stylelint-config-standard`
+To enable back StyleLint:
 
+```
+// add this in webpack.json
+"postcss": {
+  ["stylelint", { "ignoreFiles": "node_modules/**/*.css" }],
+}
+```
 ### Server-side Rendering
 
 #### How it works
