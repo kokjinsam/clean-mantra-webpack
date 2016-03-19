@@ -29,13 +29,8 @@ $ meteor
 
 ### Version
 
-Project Version: 1.3-rc.2
+Project Version: 1.3-rc.3
 Meteor Version: 1.3-rc.3
-
-*This project will not be updated to latest Meteor release candidate, will wait until 1.3 final version*
-
-Future:
-- update to Meteor 1.3
 
 ### Atom Configurations
 
