@@ -18,5 +18,5 @@ webpack:postcss
 webpack:css@1.1.0
 webpack:react
 
-kadira:flow-router-ssr
+kadira:flow-router-ssr@3.12.2
 kadira:dochead
