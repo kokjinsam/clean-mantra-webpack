@@ -18,6 +18,25 @@
 
 etc. For more see package.json.
 
+### Installation
+
+```
+$ git clone https://github.com/sammkj/clean-mantra-webpack.git myapp
+$ cd myapp
+$ npm install
+$ meteor
+```
+
+### Version
+
+Project Version: 1.3-rc.2
+Meteor Version: 1.3-rc.3
+
+*This project will not be updated to latest Meteor release candidate, will wait until 1.3 final version*
+
+Future:
+- update to Meteor 1.3
+
 ### Atom Configurations
 
 Downloads these packages:
@@ -27,6 +46,8 @@ Downloads these packages:
 - linter-stylelint
 - language-babel
 - language-javascript-jsx
+
+*These are not necessary but will tremendously speed up your app development*
 
 ### Styling
 

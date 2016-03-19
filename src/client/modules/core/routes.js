@@ -6,7 +6,7 @@ import {
   addDefaultMetas,
   addDefaultLinks,
   setTitle,
-} from './libs/dochead';
+} from 'client/libs/dochead';
 
 import TrioLayout from './components/layout.trio';
 import Appbar from './components/appbar';
