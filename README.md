@@ -1,20 +1,38 @@
 # Clean Project
 
+## Comparison between Webpack
+
+| Feature       | Meteor Modules | Webpack   |
+| ------------- |:--------------:| ---------:|
+| SSR           | Y              | Y         |
+| Babel Plugins | Y              | Y         |
+| CSS Modules   | Partial        | Y         |
+| Code Splitting| X              | Y         |
+
+Notes:
+- CSS Modules in Meteor uses .mss extension because css compiler clashes with nathantreid:css-modules
+
+Issues:
+
+- Unable to import stylesheets from node_modules. Track [here](https://github.com/meteor/meteor/issues/6037)
+-  
+
 ## Major features:
 
 1. SSR
 2. React
 3. Mantra
 4. Redux
-5. Webpack
+5. Meteor 1.3 Modules
 
 ## Minor Features:
 
 1. kadira:dochead for SEO
-2. webpack:postcss for css
+2. nathantreid:css-modules for css
 3. JSX control statements
 4. ImmutableJS
 5. normalize.css
+6. React Hotloader, [link to instruction](https://github.com/gadicc/meteor-react-hotloader)
 
 etc. For more see package.json.
 
